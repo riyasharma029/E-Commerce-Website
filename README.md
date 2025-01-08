@@ -5,9 +5,6 @@ KeyClimber is not just an e-commerce platform; we specialize in a wide array of 
 About Us
 Services
 Technologies Used
-Installation
-Usage
-Contributing
 License
 
 ## About Us
@@ -52,50 +49,7 @@ Version Control:
 
 Git (for source code management)
 GitHub (for collaboration and code hosting)
-Installation
-To get KeyClimber up and running locally, follow these steps:
 
-Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/riyasharma029/KeyClimber.git
-Navigate to the project directory:
-
-bash
-Copy code
-cd KeyClimber
-Set up the backend:
-
-Install and configure a local PHP server (e.g., XAMPP or MAMP).
-Import the provided MySQL database schema located in the database directory into your MySQL database.
-Configure database connection:
-
-Update the database connection details in the configuration file (typically config.php or similar) to match your local MySQL setup.
-Run the application:
-
-Launch the local server and navigate to the application in your browser:
-bash
-Copy code
-http://localhost/keyclimber
-Usage
-Customer Experience:
-
-Browse and filter products by categories.
-Add products to your shopping cart and proceed to secure checkout.
-Create an account to manage orders and track your purchasing history.
-Admin Dashboard:
-
-Admin users can access the dashboard to manage product listings, view customer orders, and update stock levels.
-Admins can also view transaction reports and manage user accounts.
-Contributing
-We welcome contributions to improve KeyClimber! If you would like to contribute, please follow these steps:
-
-Fork the repository.
-Create a new branch for your feature or bug fix.
-Commit your changes with clear and descriptive commit messages.
-Push your changes and open a pull request for review.
-Please ensure your code adheres to our code of conduct and passes all relevant tests before submitting.
-
-License
+## License
 This project is licensed under the MIT License. For more details, refer to the LICENSE file.
