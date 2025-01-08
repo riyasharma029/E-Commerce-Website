@@ -3,11 +3,12 @@ To look at the live demo of the website [click here](https://riyasharma029.githu
 
 KeyClimber is not just an e-commerce platform; we specialize in a wide array of services to elevate your online presence and business growth. From graphic design to digital marketing, SEO, SMO, and social media management, we bring your vision to life with creativity and results-driven strategies. Our diligent team is dedicated to helping you achieve your business goals and improve your brand's online reputation.
 
-## Table of Contents
-About Us
-Services
-Technologies Used
-License
+- [About us](#About-us)
+- [Our Vision](#Our-Vision)
+- [Services](#Services)
+- [Technologies Used](#technologies-used)
+- [License](#License)
+
 
 ## About Us
 At KeyClimber, we specialize in enhancing your brand’s online appearance and driving business success. Our team of experts provides creative and effective digital marketing solutions tailored to your business needs. Whether you need a stunning website, optimized Google Business Profile, or impactful social media marketing strategies, we are here to help you climb higher.
@@ -33,8 +34,11 @@ Instagram & LinkedIn Marketing: Create and execute strategies for brand awarenes
 ### Frontend:
 
 HTML5
+
 CSS3 (Responsive Design)
+
 JavaScript (for enhanced interactivity)
+
 Bootstrap (for responsive layouts)
 
 ### Backend:
