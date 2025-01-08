@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seo</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="seo.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <a href="index.html" class="logo"><span>Key</span>climber</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#vendor">Services</a>
+            <a href="contact.html">Contact us</a>
+            <a href="success.html">Success Stories</a>
+        </nav>
+
+        <div id="menu-bars" class="fas fa-bars"></div>
+
+    </header>
+
+    </header>
+
+    <!-- header section ends -->
+    <section class="home" id="home">
+
+        <div class="content">
+            <!-- <h3>EXCLUSIVE EVENTS</h3> -->
+            <p>At <span> Keyclimber</span> , we're about assisting your business to be the best variant of itself on the
+                internet. What we specialize in is digital marketing, meaning that we will show you how to let your
+                brand literally glow on the internet. We will help in getting your website on top of Google, building
+                reach on social media, and catching eyeballs with advertisements—basically, all there is to it. We use
+                smart strategies to ensure real results from your marketing efforts: more customers, increased sales.
+                Your online presence at the next level? Let's connect.</p>
+            <a href="contact.html" class="btn">Contact Now</a>
+        </div>
+
+        <div class="image">
+            <img src="digitalservice.png" alt="">
+        </div>
+
+    </section>
+
+
+    <!-- FONT AWESOME LINK USING BOXICON -->
+    >
+
+
+    <div class="wrapper">
+
+        <div class="content-box">
+            <div class="card">
+                <i class="bx bx-mobile bx-md"></i>
+                <h2>Social Media Management</h2>
+                <p>Engage your audience person-to-person with social media. Proper management by our experts provides
+                    consistent, engaging posts and responds to all interactions promptly to help nurture meaningful
+                    relationships with customers.
+                    .</p>
+            </div>
+            <div class="card">
+                <i class="bx bx-envelope bx-md"></i>
+                <h2>Email Marketing Campaigns</h2>
+                <p> Keep in touch and stay top-of-mind with prospects and customers with relevant email campaigns. Our
+                    compelling emails communicate personal messages, special offers, and relevant content—fueling
+                    interest while continuing to nurture customer relationships.</p>
+            </div>
+            <div class="card">
+                <i class='bx bx-pointer bx-md'></i>
+
+                <h2> Pay-Per-Click Advertising (PPC)</h2>
+                <p> Engage your potential customer at the very moment they need your service or product. Our campaigns
+                    take your business in front of search and social media platforms to drive relevant traffic and
+                    maximize your envisions.</p>
+            </div>
+            <div class="card">
+                <i class="bx bx-pencil bx-md"></i>
+                <h2>Content Marketing Strategy</h2>
+                <p> Share valuable information that gives meaning to your audience. Our bespoke plan will ensure the
+                    blog posts, videos, and infographics resonate most with your target audience, setting your brand
+                    apart as the information guru and expert.</p>
+            </div>
+            <div class="card">
+                <i class="bx bx-store-alt bx-md"></i>
+
+
+
+                <h2> Search Engine Marketing (SEM)</h2>
+                <p>Connect with people who have high intent—actively searching for what you offer. Our search engine
+                    marketing services optimize your website and ensure that your business runs relevant ad campaigns to
+                    list at the top of search engine results pages, drive qualified leads, and conversations.</p>
+
+            </div>
+            <div class="card">
+                <i class="bx bx-bar-chart-alt bx-md"></i>
+                <h2> Analytics and Reporting</h2>
+                <p> Connect the dots between digital marketing efforts and business success. Analytics gives you
+                    insights into audience behavior, campaign performance, and the real ROI—empowering you to drive the
+                    most informed decisions and strategy optimization.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" id="contact">
+        <div class="box-container">
+            <div class="mainBox">
+                <div class="content">
+
+                    <h1 class="logoName"> Keyclimber </h1>
+                </div>
+
+                <p>Boost your business with us</p>
+
+            </div>
+            <div class="box">
+                <h3>Quick link</h3>
+                <a href="#home"> <i class="fas fa-arrow-right"></i>Home</a>
+                <a href="#Services"> <i class="fas fa-arrow-right"></i>Services</a>
+                <a href="#about"> <i class="fas fa-arrow-right"></i>About us</a>
+                <a href="success.html"> <i class="fas fa-arrow-right"></i>Success Stories</a>
+                <a href="#Contact"> <i class="fas fa-arrow-right"></i>contact</a>
+
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+
+                <a href="#"> <i class="fas fa-envelope"></i>yash.admin@keyclimber.com</a>
+                <a href="#"> <i class="fab fa-instagram"></i>keyclimber.business@gmail.com</a>
+
+            </div>
+
+        </div>
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script>
+        let menu = document.querySelector('#menu-bar');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+
+        }
+
+        window.onscroll = () => {
+
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('active');
+
+            if (window.scrollY > 60) {
+                document.querySelector('#scroll-top').classList.add('active');
+            } else {
+                document.querySelector('#scroll-top').classList.remove('active');
+            }
+
+        }
+
+        function loader() {
+            document.querySelector('.loader-container').classList.add('fade-out');
+        }
+
+        function fadeOut() {
+            setInterval(loader, 3000);
+        }
+
+        window.onload = fadeOut();
+    </script>
+
+
+</body>
+
+</html>

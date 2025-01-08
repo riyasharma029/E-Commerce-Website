@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seo</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="seo.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <a href="index.html" class="logo"><span>Key</span>climber</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#vendor">Services</a>
+            <a href="contact.html">Contact us</a>
+            <a href="success.html">Success Stories</a>
+        </nav>
+
+        <div id="menu-bars" class="fas fa-bars"></div>
+
+    </header>
+
+    </header>
+
+    <!-- header section ends -->
+    <section class="home" id="home">
+
+        <div class="content">
+            <!-- <h3>EXCLUSIVE EVENTS</h3> -->
+            <p>At <span> Keyclimber</span> , we take time to help your brand realize its vision by creating captivating
+                designs. We are a team of skilled graphic designers who pair keen eyes for detail with dedication to
+                creativity in order to bring about the most stunning visuals one could ever wish for. From logos,
+                branding, and marketing materials to web graphics, we design each one to be an expression of a unique
+                business identity. Whether you're just getting started or looking to refresh your brand, we've got your
+                back to bring those ideas into action. Avail our graphic design services and give your brand an uplift
+                of professionalism. Get in touch today to discuss your design needs, and let's get something
+                extraordinary happening together. </p>
+            <a href="contact.html" class="btn">Contact Now</a>
+        </div>
+
+        <div class="image">
+            <img src="graphicservice.png" alt="">
+        </div>
+
+    </section>
+
+
+    <!-- FONT AWESOME LINK USING BOXICON -->
+
+
+
+    <div class="wrapper">
+
+        <div class="content-box">
+            <div class="card">
+                <i class="bx bx-bar-chart-alt bx-md"></i>
+                <h2>Logo Design</h2>
+                <p> Make a timeless impression with an outstanding logo. Our logo design services create distinctive and versatile logos that mirror brand identity and make a strong impression in the minds of viewers.</p>
+            </div>
+            <div class="card">
+                <i class="bx bx-laptop bx-md"></i>
+                <h2>  Brand Identity & Collateral</h2>
+                <p>Build a strong brand presence across all touchpoints. From business cards and letterheads to brand guidelines, our consistent brand identities and collateral design ensure professionalism at every touchpoint.</p>
+            </div>
+            <div class="card">
+                <i class='bx bx-user bx-md'></i>
+
+                <h2> Print Design</h2>
+                <p> Bring your marketing material into life with some captivating print designs. Be it brochures and flyers or posters and banners, our Print Design services help make a statement in the physical world.</p>
+            </div>
+            <div class="card">
+                <i class="bx bx-search-alt-2 bx-md"></i>
+                <h2> Digital Graphics & Illustrations</h2>
+                <p>Give a sudden spark to your online presence by including some striking digital graphics and illustrations. We'll create custom visuals for your website, social media, and digital marketing campaigns that bring personality and flair into your online brand.</p>
+            </div>
+            <div class="card">
+                <i class="bx bx-link-alt bx-md"></i>
+
+
+
+                <h2> Designing for Packaging</h2>
+                <p>  Make your products jump off shelves by representing excellent packaging design. Our innovative packaging solutions meld aesthetic appeal with practical functionality to leave a strong impression of your products on consumers.</p>
+
+            </div>
+            <div class="card">
+                <i class="bx bx-edit-alt bx-md"></i>
+                <h2>  UI/UX Design</h2>
+                <p>  Bring out smooth and engaging user experiences through intuitive UI/UX design. Building either a website or mobile application, our design solutions focus on usability and user satisfaction to help you convert visitors into customers successfully.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" id="contact">
+        <div class="box-container">
+            <div class="mainBox">
+                <div class="content">
+
+                    <h1 class="logoName"> Keyclimber </h1>
+                </div>
+
+                <p>Boost your business with us</p>
+
+            </div>
+            <div class="box">
+                <h3>Quick link</h3>
+                <a href="#home"> <i class="fas fa-arrow-right"></i>Home</a>
+                <a href="#Services"> <i class="fas fa-arrow-right"></i>Services</a>
+                <a href="#about"> <i class="fas fa-arrow-right"></i>About us</a>
+                <a href="success.html"> <i class="fas fa-arrow-right"></i>Success Stories</a>
+                <a href="#Contact"> <i class="fas fa-arrow-right"></i>contact</a>
+
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+
+                <a href="#"> <i class="fas fa-envelope"></i>yash.admin@keyclimber.com</a>
+                <a href="#"> <i class="fab fa-instagram"></i>keyclimber.business@gmail.com</a>
+
+            </div>
+
+        </div>
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script>
+        let menu = document.querySelector('#menu-bar');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+
+        }
+
+        window.onscroll = () => {
+
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('active');
+
+            if (window.scrollY > 60) {
+                document.querySelector('#scroll-top').classList.add('active');
+            } else {
+                document.querySelector('#scroll-top').classList.remove('active');
+            }
+
+        }
+
+        function loader() {
+            document.querySelector('.loader-container').classList.add('fade-out');
+        }
+
+        function fadeOut() {
+            setInterval(loader, 3000);
+        }
+
+        window.onload = fadeOut();
+    </script>
+
+
+</body>
+
+</html>

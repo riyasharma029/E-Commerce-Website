@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seo</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+    <link rel="stylesheet" href="seo.css">
+</head>
+<body>
+   
+
+   <header class="header">
+
+      <a href="index.html" class="logo"><span>Key</span>climber</a>
+  
+      <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="#about">About</a>
+          <a href="#vendor">Services</a>
+          <a href="contact.html">Contact us</a>
+          <a href="success.html">Success Stories</a>
+      </nav>
+  
+      <div id="menu-bars" class="fas fa-bars"></div>
+  
+  </header>
+ 
+ </header>
+ 
+ <!-- header section ends -->
+ <section class="home" id="home">
+
+   <div class="content">
+       <!-- <h3>EXCLUSIVE EVENTS</h3> -->
+       <p>We host the best SEO services to optimize your online visibility, drive relevant traffic to your website, and achieve the top rankings in search engines. Our experts work on the latest techniques to make long-term growth for your business. This includes comprehensive SEO audits and keyword optimization through on-page, off-page, local, and technical SEO solutions tailored to your specific needs. Bring out the best of your website with our proven track record, transparent reporting, and dedicated support. Let us partner in your all-important Digital Marketing goals.</p>
+       <a href="contact.html" class="btn">Contact Now</a>
+   </div>
+
+   <div class="image">
+       <img src="seoservice.png" alt="">
+   </div>
+
+</section>
+
+
+    <!-- FONT AWESOME LINK USING BOXICON -->
+    
+
+
+    <div class="wrapper">
+        
+             <div class="content-box">
+                <div class="card">
+                    <i class="bx bx-bar-chart-alt bx-md"></i>
+                    <h2>Keyword Research & Strategy</h2>
+                  <p>Let us maximize your website's search engine visibility using our keyword research and strategy skills. We find the best keywords for you to draw targeted traffic to maximize your return on investment.</p>
+                </div>
+                <div class="card">
+                    <i class="bx bx-laptop bx-md"></i>
+                    <h2> On-Page SEO Optimization</h2>
+                   <p> Take your website to a different level with our professional keyword research and strategy. We look for the best keywords to attract relevant traffic and maximize your ROI..</p>
+                </div>
+                <div class="card">
+                    <i class='bx bx-user bx-md'></i>
+
+                    <h2> Technical SEO</h2>
+                <p>Check your website's technical health with our comprehensive audits and optimization. We will increase the site speed, mobile usability, and crawlability to make it more searchable on search engines. </p>
+                </div>
+                <div class="card">
+                    <i class="bx bx-search-alt-2 bx-md"></i>
+                    <h2> Local SEO</h2>
+                    <p> Get More Local Customers with Our Local SEO Services. We will optimize your online presence for local search, manage Google My Business, build local citations to increase the visibility..</p>
+                </div>
+                <div class="card">
+                     <i class="bx bx-link-alt bx-md"></i> 
+                   
+                     
+                   
+                    <h2> Link Building</h2>
+                    <p> Let your site increase in authority and ranking with the help of high-quality backlinks. Our ethical link building strategies not only get links from reputed sources but also ensure long-term success..</p>
+                         
+                </div>
+                <div class="card">
+                    <i class="bx bx-edit-alt bx-md"></i>
+                    <h2> Content Creation & Optimization</h2>
+                    <p> Engage audiences with personalized content at scale. We create and optimize blog posts, articles, and web copy that attracts visitors and drives conversions for all of our clients.</p>
+                </div>
+             </div>
+    </div>
+  
+    <footer class="footer" id="contact">
+      <div class="box-container">
+          <div class="mainBox">
+              <div class="content">
+                  
+                  <h1 class="logoName"> Keyclimber </h1>
+              </div>
+  
+              <p>Boost your business with us</p>
+  
+          </div>
+          <div class="box">
+              <h3>Quick link</h3>
+              <a href="#home"> <i class="fas fa-arrow-right"></i>Home</a>
+              <a href="#Services"> <i class="fas fa-arrow-right"></i>Services</a>
+              <a href="#about"> <i class="fas fa-arrow-right"></i>About us</a>
+              <a href="success.html"> <i class="fas fa-arrow-right"></i>Success Stories</a>
+              <a href="#Contact"> <i class="fas fa-arrow-right"></i>contact</a>
+  
+          </div>
+          
+          <div class="box">
+              <h3>Contact Info</h3>
+              
+              <a href="#"> <i class="fas fa-envelope"></i>yash.admin@keyclimber.com</a>
+              <a href="#"> <i class="fab fa-instagram"></i>keyclimber.business@gmail.com</a>
+  
+          </div>
+  
+      </div>
+      <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          
+      </div>
+      
+  </footer>
+  
+ 
+
+
+ <script>
+   let menu = document.querySelector('#menu-bar');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () =>{
+
+ menu.classList.toggle('fa-times');
+ navbar.classList.toggle('active');
+
+}
+
+window.onscroll = () =>{
+
+ menu.classList.remove('fa-times');
+ navbar.classList.remove('active');
+
+ if(window.scrollY > 60){
+   document.querySelector('#scroll-top').classList.add('active');
+ }else{
+   document.querySelector('#scroll-top').classList.remove('active');
+ }
+
+}
+
+function loader(){
+ document.querySelector('.loader-container').classList.add('fade-out');
+}
+
+function fadeOut(){
+ setInterval(loader, 3000);
+}
+
+window.onload = fadeOut();
+</script>
+
+
+</body>
+</html>
+ 
+ 
+
+   

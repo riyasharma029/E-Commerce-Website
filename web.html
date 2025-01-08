@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seo</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="seo.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <a href="index.html" class="logo"><span>Key</span>climber</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#vendor">Services</a>
+            <a href="contact.html">Contact us</a>
+            <a href="success.html">Success Stories</a>
+        </nav>
+
+        <div id="menu-bars" class="fas fa-bars"></div>
+
+    </header>
+
+    </header>
+
+    <!-- header section ends -->
+    <section class="home" id="home">
+
+        <div class="content">
+            <!-- <h3>EXCLUSIVE EVENTS</h3> -->
+            <p>Our unmatched website development services at Keyclimber work day and night to give your vision a face
+                and your business a boost. This is underscored by our skilled web developers and designers, resulting in
+                a custom, responsive, and user-friendly website that doesn't only look stunning but also works
+                perfectly. So, some of the web services we offer include custom website design, responsive development,
+                e-commerce solutions, content management systems, SEO optimization, and subsequent follow-up maintenance
+                and support. Our customer-centric approach has proven to deliver, and it ensures that you get
+                business-specific solutions. With Keyclimber, build a results-driven website that changes your online
+                presence. Contact us today to enhance your digital footprint. </p>
+            <a href="contact.html" class="btn">Contact Now</a>
+        </div>
+
+        <div class="image">
+            <img src="webservice.png" alt="">
+        </div>
+
+    </section>
+
+
+    <!-- FONT AWESOME LINK USING BOXICON -->
+    >
+
+
+    <div class="wrapper">
+
+        <div class="content-box">
+            <div class="card">
+                <i class="bx bx-laptop bx-md"></i>
+                <h2>Custom Website Development</h2>
+                <p>Kicking off with your vision, we will turn it into a completely working website, uniquely tailored to
+                    your special needs. Our custom website development services ensure a perfect fit for your business
+                    by delivering bespoke features and functionalities to drive engagement and conversions..</p>
+            </div>
+            <div class="card">
+                <i class="bx bx-store-alt bx-md"></i>
+                <h2>E-commerce Development</h2>
+                <p> Now launch a strong online store with our e-commerce development services. We build user-friendly,
+                    safe, and scalable e-commerce platforms that provide seamless shopping experiences and drive sales.
+                </p>
+            </div>
+            <div class="card">
+                <i class='bx bxl-wordpress bx-md'></i>
+
+                <h2> WordPress Development</h2>
+                <p> Power up WordPress with our customized development services: custom WordPress themes and plugins
+                    that make your site dynamic, manageable, and in line with your brand.</p>
+            </div>
+            <div class="card">
+                <i class="bx bx-edit bx-md"></i>
+                <h2> CMS Development</h2>
+                <p> Make all your content easily manageable through our CMS development services. We specialize in
+                    user-friendly and flexible CMS solutions that definitely help update your website content.</p>
+            </div>
+            <div class="card">
+                <i class="bx bx-mobile-alt bx-md"></i>
+
+
+
+                <h2> Responsive Web Design</h2>
+                <p> Get fabulous and stunning sites on all devices with our responsive web design services. We offer
+                    mobile-friendly websites with the best user experience on small screens and large devices alike.</p>
+
+            </div>
+            <div class="card">
+                <i class="bx bx-support bx-md"></i>
+                <h2> Website Maintenance & Support </h2>
+                <p> Give your website its long-lasting peak performance with our maintenance and support services. We
+                    will update it regularly, check for security, and optimize performance so that your website stays
+                    updated and secure.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" id="contact">
+        <div class="box-container">
+            <div class="mainBox">
+                <div class="content">
+
+                    <h1 class="logoName"> Keyclimber </h1>
+                </div>
+
+                <p>Boost your business with us</p>
+
+            </div>
+            <div class="box">
+                <h3>Quick link</h3>
+                <a href="#home"> <i class="fas fa-arrow-right"></i>Home</a>
+                <a href="#Services"> <i class="fas fa-arrow-right"></i>Services</a>
+                <a href="#about"> <i class="fas fa-arrow-right"></i>About us</a>
+                <a href="success.html"> <i class="fas fa-arrow-right"></i>Success Stories</a>
+                <a href="#Contact"> <i class="fas fa-arrow-right"></i>contact</a>
+
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+
+                <a href="#"> <i class="fas fa-envelope"></i>yash.admin@keyclimber.com</a>
+                <a href="#"> <i class="fab fa-instagram"></i>keyclimber.business@gmail.com</a>
+
+            </div>
+
+        </div>
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+    <script>
+        let menu = document.querySelector('#menu-bar');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+
+        }
+
+        window.onscroll = () => {
+
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('active');
+
+            if (window.scrollY > 60) {
+                document.querySelector('#scroll-top').classList.add('active');
+            } else {
+                document.querySelector('#scroll-top').classList.remove('active');
+            }
+
+        }
+
+        function loader() {
+            document.querySelector('.loader-container').classList.add('fade-out');
+        }
+
+        function fadeOut() {
+            setInterval(loader, 3000);
+        }
+
+        window.onload = fadeOut();
+    </script>
+
+
+</body>
+
+</html>
